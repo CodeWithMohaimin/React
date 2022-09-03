@@ -1,11 +1,14 @@
 import React from "react"
 
-const Social = () => {
+const Social = (props) => {
     return (
       <div className="social">
-        <a href="https://www.youtube.com/">Home</a>
-        <a href="https://www.youtube.com/">Github</a>
-        <a href="https://www.youtube.com/">Linkedin</a>
+        <a
+          href={props.linkA} >Home</a>
+        <a
+          href= {props.linkB} >Github</a>
+        <a
+          href= {props.linkC} >Linkedin</a>
     </div>
     )
   }
