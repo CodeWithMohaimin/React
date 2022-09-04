@@ -11,5 +11,6 @@ const Social = (props) => {
           href= {props.linkC} >Linkedin</a>
     </div>
     )
-  }
+}
+
 export default Social

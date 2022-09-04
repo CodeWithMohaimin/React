@@ -8,5 +8,5 @@ const Bio = (props) => {
     </div>
     )
   }
-  
+
 export default Bio
