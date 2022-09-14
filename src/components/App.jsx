@@ -1,86 +1,39 @@
 import React from "react";
-import Bio from "./bio";
 import './stylesCompo/header.style.css';
-import Skills from "./skills";
-import Social from "./social";
-import Image from "./image";//jsx file
-import imageA from "./image/mohaimin.jpg"
-import imageB from "./image/natasha.jpg"
-import imageC from "./image/rimpa.jpg"
+// import Intro from "./state/intro"
+
 
 class App extends React.Component{
+    //Old Style
+    // constructor(props) {
+    //     super(props)
+    //     this.count = 0;
+    //     this.state = {
+    //         count:1
+    //     }
+    // }
 
-    getContext() {
-        
+    state = {
+        count: 0,
+        double: 0,
+        nam: 'mohaimin',
     }
 
     render() {
       return (
-          <div >
-              <div className="container">
-                  <Bio
-                      name='Rim'
-                      title='Lover Girl'
-                  />
-                  <Image
-                      image = {imageB}
-                      altA='Rim'
-                  />
-                  <Skills
-                      skillA='Love'
-                      skillB='Hate'
-                      skillC='Fucking'
-                  />
-                  < Social
-                    linkA="https://www.youtube.com/"
-                    linkB="https://www.youtube.com/"
-                    linkC="https://www.youtube.com/"
-                  />
-              </div>
+          <div>
+              <h1>count = {this.state.count}</h1>
 
+              <button onClick={() => {
+                  this.setState(prev => {
+                      return {
+                          count: prev.count + 1
+                      }
+                  }, () => {
+                      console.log(this.state.count)
+                  })
+              }}>Click ME</button>
 
-              <div className="container">
-                  <Bio
-                      name=' Mohaimin'
-                      title='Programmer , React Developer'
-                  />
-                  <Image
-                      image = {imageA}
-                      altA='Rim'
-                  />
-                  <Skills
-                      skillA='React'
-                      skillB='JavaScript'
-                      skillC='Node'
-                  />
-                  < Social
-                    linkA="https://www.youtube.com/"
-                    linkB="https://www.youtube.com/"
-                    linkC="https://www.youtube.com/"
-                  />
-              </div>
-
-
-              <div className="container">
-                  <Bio
-                      name=' Natasha'
-                      title='UX-UI Designer'
-                  />
-                  <Image
-                      image = {imageC}
-                      altA='Rim'
-                  />
-                  <Skills
-                      skillA='PhotoShope'
-                      skillB='Illustrator'
-                      skillC='Figma'
-                  />
-                  < Social
-                    linkA="https://www.youtube.com/"
-                    linkB="https://www.youtube.com/"
-                    linkC="https://www.youtube.com/"
-                  />
-              </div>
           </div>
       );
     };
