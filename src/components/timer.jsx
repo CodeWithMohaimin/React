@@ -31,7 +31,7 @@ export default class timer extends Component {
           }
         })
       }, 1000)
-    }
+    } 
     
   }
 // pause timer button
