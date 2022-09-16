@@ -1,13 +1,13 @@
 import React from "react";
 import './stylesCompo/header.style.css';
-import Timers from "./timers";
+import Event from "./event";
 
 class App extends React.Component{
     
     render() {
       return (
           <div>
-              <Timers/>
+              <Event/>
           </div>
       );
     };
