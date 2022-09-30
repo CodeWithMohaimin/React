@@ -60,3 +60,28 @@ img{
     margin: 30px;
     cursor: pointer;
 }
+
+/* form  */
+/* .form{
+    padding: 20px;
+    
+} */
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    margin: 10px 0;
+    padding: 15px;
+}
+.form select{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.form textarea{
+    max-width: 100%;
+    min-height: 150px;
+}
+.form h1{
+    border-bottom: 1px solid #999;
+}

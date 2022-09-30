@@ -30,8 +30,9 @@ export default class event extends Component {
                 onFocus={this.onFocusHandler}
                 onBlur={this.onBlurHandler}
             />
-            <h2>Welcome,{this.state.name} </h2>
+            {this.state.name && <h2>Welcome,{this.state.name} </h2>}
       </div>
     )
   }
 }
+

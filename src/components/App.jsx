@@ -1,13 +1,13 @@
 import React from "react";
 import './stylesCompo/header.style.css';
-import Event from "./event";
+import Input from "./Input";
 
 class App extends React.Component{
     
     render() {
       return (
           <div>
-              <Event/>
+              <Input/>
           </div>
       );
     };
