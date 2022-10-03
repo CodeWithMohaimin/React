@@ -36,7 +36,10 @@ export default class UnControlForm extends Component {
                 type='submit'
 
              >Submit </button>
-        </form>
+            </form>
+            <button>
+                Sign Up
+            </button>
       </div>
     )
   }
