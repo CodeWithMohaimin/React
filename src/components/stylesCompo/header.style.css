@@ -89,3 +89,19 @@ img{
 .radios{
     display:inline !important;
 }
+
+/* unControlForm */
+.unControlForm{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #999;
+    width: 350px;
+    
+}
+.unControlForm input{
+    padding: 10px;
+    margin: 1px;
+    outline: none;
+    width: 100%;
+    
+}
