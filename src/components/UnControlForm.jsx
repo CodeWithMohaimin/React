@@ -22,24 +22,24 @@ export default class UnControlForm extends Component {
                 name='email'
                 placeholder='email@example.com'
             />
-            <br/>
+            
+            <br />
+                
             <input
                 type="password"
                 name='password'
                 placeholder='*******'
             />
-                <br />
+            <br />
 
-                <button
-                    type='submit'
+            <button
+                type='submit'
 
-                >
-                    Submit
-                </button>
+             >Submit </button>
         </form>
       </div>
     )
   }
 }
 
-//this is good practice
+//this is good practice   
