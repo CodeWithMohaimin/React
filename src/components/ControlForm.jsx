@@ -16,8 +16,13 @@ export default class ControlForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-
     console.log(this.state)
+
+    this.setState({
+      name: '',
+      email: '',
+      password: '',
+    })
   }
 
   render() {
