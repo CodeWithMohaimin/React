@@ -1,13 +1,13 @@
 import React from "react";
 import './stylesCompo/header.style.css';
-import UnControlForm from "./UnControlForm";
+import ControlForm from "./ControlForm";
 
 class App extends React.Component{
     
     render() {
       return (
           <div>
-              <UnControlForm />
+              <ControlForm />
           </div>
       );
     };
