@@ -1,15 +1,20 @@
 import React from "react";
-import './stylesCompo/header.style.css';
-import ControlForm from "./ControlForm";
+import './components/stylesCompo/header.style.css';
+
+
+
+
+
+
+
+
 
 class App extends React.Component{
-    
     render() {
       return (
           <div>
-              <ControlForm />
           </div>
-      );
+        );
     };
 };
 
