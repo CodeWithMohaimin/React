@@ -1,6 +1,6 @@
 import React from "react";
-import './components/stylesCompo/header.style.css';
-
+import './input.css'
+import Card from "./components/AnisulIslam/Card";
 
 
 
@@ -13,6 +13,7 @@ class App extends React.Component{
     render() {
       return (
           <div>
+              <Card/>
           </div>
         );
     };
