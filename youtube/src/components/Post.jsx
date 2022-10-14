@@ -2,10 +2,6 @@ import React from 'react'
 
 
 const Post = (props) => {
-  // const items = [];
-  // items = Data.map(data =>data.title)
-  // console.log(items)
-
   return (
     <div className='flex flex-col justify-center w-full max-w-md mx-auto my-10 bg-teal-500 p-8 space-y-4 text-lg text-white'>
       <p>User ID : {props.userId}</p>
@@ -20,7 +16,6 @@ const Post = (props) => {
       <p className='text-center capitalize'>
         {props.body}
       </p>
-      
     </div>
   )
 }
