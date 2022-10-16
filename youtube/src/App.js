@@ -1,12 +1,12 @@
 import React from 'react';
-import Post from './components/Post';
+import NestedMap from './components/NestedMap';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Post />
+      <NestedMap />
     </div>
   );
 }
