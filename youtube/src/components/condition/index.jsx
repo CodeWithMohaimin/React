@@ -12,16 +12,10 @@ export default class index extends Component {
            isLoggedIn: false,
         }
       }
-      
     render() {
-        const { isLoggedIn } = this.state;
-        let element;
+       
+        let element = (this.state.isLoggedIn) ? <Home /> : <Login />
 
-        if (isLoggedIn) {
-            element= <Home />
-        } else {
-            element = <Login />
-        }
         return (
             <div>
                 {element}
@@ -29,6 +23,29 @@ export default class index extends Component {
         )
   }
 }
+
+
+
+//-----> Conditional Rendering with Ternary Operator 
+
+// export default class index extends Component {
+//     constructor(props) {
+//         super(props)
+      
+//         this.state = {
+//            isLoggedIn: false,
+//         }
+//       }
+//     render() {
+       
+//         let element = (this.state.isLoggedIn) ? <Home /> : <Login />
+
+//         return (
+//             <div>
+//                 {element}
+//             </div>
+//         )
+//   }
 
 
 
@@ -52,5 +69,38 @@ export default class index extends Component {
 //       } else {
 //           return <Login />
 //     }
+//   }
+// }
+
+
+
+//------> Conditional Rendering with element variable
+
+// export default class index extends Component {
+//     constructor(props) {
+//         super(props)
+      
+//         this.state = {
+//            isLoggedIn: false,
+//         }
+//       }
+      
+//     render() {
+//         const { isLoggedIn } = this.state;
+//         let element;
+
+//         if (isLoggedIn) {
+//             element= <Home />
+//         } else {
+//             element = <Login />
+//         }
+
+
+        
+//         return (
+//             <div>
+//                 {element}
+//             </div>
+//         )
 //   }
 // }
