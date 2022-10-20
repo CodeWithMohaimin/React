@@ -26,7 +26,7 @@ export default class index extends Component {
 
 
 
-//-----> Conditional Rendering with Ternary Operator 
+//-----> Conditional Rendering with Ternary Operator
 
 // export default class index extends Component {
 //     constructor(props) {
@@ -43,6 +43,42 @@ export default class index extends Component {
 //         return (
 //             <div>
 //                 {element}
+//             </div>
+//         )
+//   }
+//-----> Conditional Rendering with Ternary Operator
+
+// export default class index extends Component {
+//     constructor(props) {
+//         super(props)
+      
+//         this.state = {
+//            isLoggedIn: false,
+//         }
+//       }
+//     render() {
+//         return (
+//             <div>
+//                 (this.state.isLoggedIn) ? <Home /> : <Login />
+//             </div>
+//         )
+//   }
+
+
+//-----> Conditional Rendering with && Operator 
+
+// export default class index extends Component {
+//     constructor(props) {
+//         super(props)
+      
+//         this.state = {
+//            isLoggedIn: false,
+//         }
+//       }
+//     render() {
+//         return (
+//             <div>
+//                 (this.state.isLoggedIn) && <Home />
 //             </div>
 //         )
 //   }
