@@ -9,15 +9,48 @@ export default class index extends Component {
         super(props)
       
         this.state = {
-           isLoggedIn: true,
+           isLoggedIn: false,
         }
       }
       
-  render() {
-      if (this.state.isLoggedIn) {
-        return <Home />
-      } else {
-          return <Login />
-    }
+    render() {
+        const { isLoggedIn } = this.state;
+        let element;
+
+        if (isLoggedIn) {
+            element= <Home />
+        } else {
+            element = <Login />
+        }
+        return (
+            <div>
+                {element}
+            </div>
+        )
   }
 }
+
+
+
+
+
+
+//-----> Conditional Rendering with if else statements
+
+// export default class index extends Component {
+//     constructor(props) {
+//         super(props)
+      
+//         this.state = {
+//            isLoggedIn: true,
+//         }
+//       }
+      
+//   render() {
+//       if (this.state.isLoggedIn) {
+//         return <Home />
+//       } else {
+//           return <Login />
+//     }
+//   }
+// }
