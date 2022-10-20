@@ -1,12 +1,13 @@
 import React from 'react';
-import NestedMap from './components/NestedMap';
+import Condition from './components/condition/index';
 
 
 
 function App() {
   return (
     <div className="App">
-      <NestedMap />
+      <Condition />
+      
     </div>
   );
 }
