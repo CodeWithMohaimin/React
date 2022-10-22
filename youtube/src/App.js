@@ -1,13 +1,12 @@
 import React from 'react';
-import Condition from './components/condition/index';
+import CounterApp from './components/Assignments/CounterApp';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Condition />
-      
+      <CounterApp />
     </div>
   );
 }
