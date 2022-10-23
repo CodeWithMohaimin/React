@@ -1,12 +1,12 @@
 import React from 'react';
-import CounterApp from './components/Assignments/CounterApp';
+import Home from './components/State_Lifting/Home';
 
 
 
 function App() {
   return (
     <div className="App">
-      <CounterApp />
+      <Home />
     </div>
   );
 }
