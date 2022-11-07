@@ -1,14 +1,12 @@
-import React from 'react';
-import Home from './components/State_Lifting/Home';
+import React from "react";
+import Navbar from "./components/Real-Usable-Components/Navbar";
 
-
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      <Navbar />
     </div>
   );
-}
+};
 
 export default App;
