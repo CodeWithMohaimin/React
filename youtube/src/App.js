@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Real-Usable-Components/Navbar";
+import Navbar from "./components/Toggle";
 
 const App = () => {
   return (
