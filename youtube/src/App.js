@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./components/Toggle";
+import UseEffect from "./UseEffectPractice";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <UseEffect />
     </div>
   );
 };
